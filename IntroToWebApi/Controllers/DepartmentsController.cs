@@ -2,7 +2,8 @@
 using IntroToWebApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
+
 #nullable disable
 namespace IntroToWebApi.Controllers
 {

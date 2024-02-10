@@ -1,0 +1,52 @@
+﻿@using IntroToWebApi.Entities
+@model List<Department>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+
+        <tr>
+            <th>
+
+                Id
+            </th>
+            <th>
+
+               Name
+            </th>
+
+        </tr>
+        
+    </thead>
+    <tbody>
+
+        @foreach(var Depts in Model)
+        {
+
+            <tr>
+
+                <td>
+
+                    @Depts.Id
+
+                </td>
+                <td>
+
+                    @Depts.Name
+
+                </td>
+              
+
+            </tr>
+            
+        }
+
+    </tbody>
+    
+
+</table>
+
